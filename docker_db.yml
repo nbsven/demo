@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+
+  #database
+    timeseries:
+      image: postgres:10
+      container_name: demo
+      ports:
+       - 5439:5432
+      env_file:
+        - db_credentials.env
+      volumes:
+        - /home/abra/IdeaProjects/demo/db/demo:/var/lib/postgresql/data/demo
+#      restart: false

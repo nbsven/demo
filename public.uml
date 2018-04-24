@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>e930e99c-7dcf-45e4-bca0-c2bed0177b78.SCHEMA:demo.public</OriginalElement>
+  <nodes>
+    <node x="0.0" y="601.0">e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.entity</node>
+    <node x="436.5833333333333" y="-28.0">e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.consumer</node>
+    <node x="130.08333333333331" y="215.0">e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.storage</node>
+    <node x="422.0833333333333" y="198.0">e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.order_table</node>
+    <node x="234.75" y="460.0">e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.product</node>
+    <node x="-82.25" y="446.5">e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.storage_store</node>
+    <node x="4.75" y="24.0">e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.store</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.storage_store" target="e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.storage">
+      <point x="43.25" y="-39.5" />
+      <point x="140.5" y="355.0" />
+      <point x="162.91666666666663" y="355.0" />
+      <point x="-65.66666666666669" y="40.0" />
+    </edge>
+    <edge source="e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.order_table" target="e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.store">
+      <point x="-47.0" y="-76.0" />
+      <point x="394.0833333333333" y="153.0" />
+      <point x="152.5" y="153.0" />
+      <point x="49.25" y="40.0" />
+    </edge>
+    <edge source="e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.order_table" target="e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.consumer">
+      <point x="47.0" y="-76.0" />
+      <point x="0.0" y="64.0" />
+    </edge>
+    <edge source="e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.storage_store" target="e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.store">
+      <point x="-43.25" y="-39.5" />
+      <point x="-49.25" y="40.0" />
+    </edge>
+    <edge source="e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.product" target="e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.order_table">
+      <point x="60.333333333333314" y="-88.0" />
+      <point x="354.5833333333333" y="355.0" />
+      <point x="441.0833333333333" y="355.0" />
+      <point x="0.0" y="76.0" />
+    </edge>
+    <edge source="e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.product" target="e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.storage">
+      <point x="-60.33333333333334" y="-88.0" />
+      <point x="233.91666666666669" y="355.0" />
+      <point x="228.58333333333331" y="355.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9999999999999999" x="261.9566205821568" y="318.7656632038989" />
+  <SelectedNodes>
+    <node>e930e99c-7dcf-45e4-bca0-c2bed0177b78.TABLE:demo.public.consumer</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Key columns</Category>
+  </Categories>
+</Diagram>
+
