@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+
+  #database
+  demo-database:
+    image: postgres:10
+    container_name: demo
+    ports:
+     - 5432:5432
+    env_file:
+      - db_credentials.env
+    volumes:
+      - /home/abra/IdeaProjects/demo/db/demo:/var/lib/postgresql/data/demo
+    restart: always
+    #restart: false
+
+  #application
+  demo-applicaton:
+    image: abrademoimg
+    restart: always
+    ports:
+    - 8080:8080
+    depends_on:
+    - demo-database
+

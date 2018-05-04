@@ -5,9 +5,9 @@ services:
   #database
     timeseries:
       image: postgres:10
-      container_name: demo
+      container_name: demon
       ports:
-       - 5439:5432
+       - 5432:5432
       env_file:
         - db_credentials.env
       volumes:
