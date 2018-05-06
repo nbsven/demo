@@ -7,11 +7,11 @@ services:
     image: postgres:10
     container_name: demo
     ports:
-     - 5432:5432
+     - 5433:5432
     env_file:
       - db_credentials.env
     volumes:
-      - /home/abra/IdeaProjects/demo/db/demo:/var/lib/postgresql/data/demo
+      - /home/db/demo:/var/lib/postgresql/data/demo
     restart: always
     #restart: false
 
@@ -20,7 +20,7 @@ services:
     image: abrademoimg
     restart: always
     ports:
-    - 8080:8080
+    - 8181:8080
     depends_on:
     - demo-database
 

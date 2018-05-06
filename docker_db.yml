@@ -11,5 +11,5 @@ services:
       env_file:
         - db_credentials.env
       volumes:
-        - /home/abra/IdeaProjects/demo/db/demo:/var/lib/postgresql/data/demo
+        - /home/abra/IdeaProjects/demo/db/demon:/var/lib/postgresql/data/demo
 #      restart: false
